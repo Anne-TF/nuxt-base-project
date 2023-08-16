@@ -1,0 +1,41 @@
+// ADDING CLASSES TO VUETIFY
+@forward 'vuetify/settings' with (
+  $button-color: green,
+  $button-font-weight: 700
+);
+
+// IMPORTS
+@import "_variables";
+/* @import "_fonts";*/
+@import "_spacing";
+
+// COLORS
+
+$colors: (
+  "primary": $md-primary,
+  "secondary": $md-secondary,
+  "tertiary": $md-tertiary,
+  "danger": $md-danger,
+  "info": $md-info,
+  "dark": $md-dark,
+  "tertiary--opacity": $md-tertiary--opacity
+);
+
+// COLOR RELATED CLASSED
+@each $name, $color in $colors {
+  // classes for texts in every color
+  .text-md-#{$name} {
+    color: $color !important;
+  }
+  // classes for backgrounds in every color
+  .bg-md-#{$name} {
+    background-color: $color !important;
+  }
+  // classes for borders in every color
+  .border-md-#{$name} {
+    border-left: 1px solid $color !important;
+    border-right: 1px solid $color !important;
+    border-top: 1px solid $color !important;
+    border-bottom: 1px solid $color !important;
+  }
+}
