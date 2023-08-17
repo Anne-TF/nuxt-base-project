@@ -20,7 +20,7 @@ const { data, error, pending, refresh } = useAsyncData('pokemons', () =>
             offset: 0
         },
         data: {
-            // pick: ['count']
+            pick: ['count', 'next']
         }
     });
 });

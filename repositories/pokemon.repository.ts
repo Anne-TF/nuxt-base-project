@@ -14,9 +14,6 @@ class PokemonRepository
             method: 'GET',
             ...data
         };
-
-        console.log(options);
-
         return HttpService.request<PokemonInterface>({ config: options, queryParams });
     }
 }
