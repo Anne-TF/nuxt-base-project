@@ -1,4 +1,4 @@
-interface IPayloadProps<T=Record<string, any>>
+interface PayloadPropsInterface<T=Record<string, any>>
 {
     baseUrl?: string;
     user?: any | null;
@@ -7,4 +7,4 @@ interface IPayloadProps<T=Record<string, any>>
     data?: T;
 }
 
-export default IPayloadProps;
+export default PayloadPropsInterface;
