@@ -30,7 +30,8 @@ export default defineNuxtConfig({
             // @ts-ignore
                 config.plugins.push(vuetify())
             );
-        }
+        },
+        '@pinia/nuxt'
     ],
     devtools: { enabled: true }
 });

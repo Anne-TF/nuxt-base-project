@@ -39,3 +39,8 @@ $colors: (
     border-bottom: 1px solid $color !important;
   }
 }
+
+.cursor-pointer {
+  cursor: pointer;
+  user-select: none;
+}

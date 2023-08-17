@@ -35,6 +35,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
     "husky": "^8.0.3",
     "sass": "^1.65.1",
     "vite-plugin-vuetify": "^1.0.2",
